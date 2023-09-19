@@ -1,0 +1,24 @@
+<div id="conteneur_contact">
+    <div class="animate__animated animate__fadeIn" id="contact">
+        <h1>Me Contacter</h1>
+        <form action="envoi.php" method="post">
+            <label class="required" for="name">Votre Nom:</label><br />
+            <input id="name" class="input" name="nom" type="text" value="" size="50" required placeholder="Nom" /><br />
+            <span id="name_validation" class="error_message"></span>
+
+            <label class="required" for="sujets">Votre Sujet:</label><br />
+            <input id="sujet" class="input" name="sujet" type="text" value="" size="50" required placeholder="Sujet" /><br />
+            <span id="sujets_validation" class="error_message"></span>
+
+            <label class="required" for="email">Votre Email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="50" required placeholder="Email@exemple.com" /><br />
+            <span id="email_validation" class="error_message"></span>
+
+            <label class="required" for="message">Votre Message:</label><br />
+            <textarea id="message" class="input " name="message" rows="7" cols="40" required placeholder="Message"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+
+            <button type="submit">Envoyer le message</button>
+        </form>
+    </div>
+</div>
