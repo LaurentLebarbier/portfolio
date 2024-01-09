@@ -38,7 +38,6 @@
         <a href="index.php"><img src="logos/LLogo.png" alt="logo Laurent Lebarbier"></a>
         <h1>Laurent Lebarbier</h1>
         <h2>Développeur web</h2>
-        <h2>Front-end</h2>
       </div>
 
       <div id="nav_et_rs">
