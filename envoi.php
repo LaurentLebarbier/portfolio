@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = htmlentities($_POST['message']);
 
     // Variables concernant l'email
-    $destinataire = 'laurentlebarbier70@gmail.com'; // Adresse email du webmaster (à personnaliser)
+    $destinataire = 'contact@laurentlebarbier.fr'; // Adresse email du webmaster (à personnaliser)
     $contenu = '<html><head><title> ' . $sujet . ' </title></head><body>';
     $contenu .= '<p>Tu as un nouveau message !</p>';
     $contenu .= '<p><strong>Nom</strong>: ' . $nom . '</p>';
@@ -17,19 +17,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $contenu .= '<p><strong>Message</strong>: ' . $message . '</p>';
     $contenu .= '</body></html>'; // Contenu du message de l'email (en XHTML)
 
-    
+
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers .= "from: $email";
-    
 }
 if (mail($destinataire, $sujet, $contenu, $headers)) // Envoi du message
 {
     echo 'Votre message a bien été envoyé ';
-}
-else // Non envoyé
+} else // Non envoyé
 {
     echo 'Votre message n\'a pas pu être envoyé';
 }
 header('location: index.php');
-?>
