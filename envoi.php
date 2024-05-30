@@ -29,4 +29,4 @@ if (mail($destinataire, $sujet, $contenu, $headers)) // Envoi du message
 {
     echo 'Votre message n\'a pas pu être envoyé';
 }
-header('location: index.php');
+header('location: index.html');
