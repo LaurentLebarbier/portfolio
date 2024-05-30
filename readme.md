@@ -1,5 +1,5 @@
-## Mon portfolio
+# Mon portfolio
 
-# Voici mon portfolio coder en html/css et javascript
+## Voici mon portfolio coder en html/css et javascript
 
-# Rajout d'en lien Discord
+## Rajout d'en lien Discord
