@@ -171,7 +171,7 @@ $("#section_centrale, header").on('click', '#para_4, #dernier_boutton', function
 
 $("#section_centrale").on('click', '#image_projet_1, #titre_projet_1, #despcription_porjet_1', function(e) {
 
-    window.open('https://github.com/LaurentLebarbier/Fricoot/', '_blank')
+    window.open('https://github.com/LaurentLebarbier/fricoot/', '_blank')
 
 })
 $("#section_centrale").on('click', '#image_projet_2, #titre_projet_2, #despcription_porjet_2', function(e) {
