@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Pour envoyer un email HTML, l'en-tête Content-type doit être défini
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= "from: $email";
+    $headers .= "from: contact@laurentlebarbier.fr";
 
     // Envoyer l'email
     //mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
@@ -35,4 +35,4 @@ if (mail($destinataire, $sujet, $contenu, $headers)) {
 {
     echo 'Votre message n\'a pas pu être envoyé';
 }
-header('location: index.php');
+header('location: index.html');
